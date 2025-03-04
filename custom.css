@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-wrap: pretty;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #e3edf7;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+.titleImg {
+  /* background-color: #a6c4c4; */
+}
+
+.titleImg img {
+  height: 7rem;
+  width: auto;
+}
+
+.title {
+  /* background-color: #767cae; */
+}
+
+.title h1 {
+  /* background-color: #39a847; */
+  color: var(--titleColor);
+  font-size: 4rem;
+}
+
+.titlePara {
+  /* background-color: #93357d; */
+  color: var(--paraColor);
+  font-size: 2rem;
+}
+
+.accordian {
+  margin: 2.5rem auto;
+  width: 70%;
+}
+
+.accordian li {
+  list-style: none;
+  margin: 1rem auto;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: -1px -2px 6px -10px rgba(0, 0, 0, 0.7), 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+}
+
+.accordian li label {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+label::before {
+  content: "+";
+  margin-right: 1rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.content {
+  background-color: #f0f0f0;
+  padding: 0 1.5rem;
+  margin: 0.1rem auto;
+  border-radius: 7px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+  max-height: 400vh;
+  padding: 1rem 1rem 2rem;
+}
+
+.accordian input[type="radio"]:checked + label::before{
+  content: '-';
+  margin-right: 1rem;
+  font-size: 3rem;
+  align-items: center;
+  /* font-weight: 700; */
+}

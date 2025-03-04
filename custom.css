@@ -98,3 +98,49 @@ input[type="radio"] {
   align-items: center;
   /* font-weight: 700; */
 }
+
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+@media (width <=576px) {
+
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+
+  .accordian {
+    width: 90%;
+    margin: 2.5rem auto; 
+  }
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+@media (width >=577px) and (width <=768px) {
+  .accordian {
+    width: 95%;
+    margin: 2.5rem auto; 
+  }
+}
+
+/* Large devices (Laptops, upto 992px and above) */
+@media (width >=769px) and (width <=992px) {
+  .accordian {
+    width: 95%;
+    margin: 2.5rem auto; 
+  }
+}
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+@media (width >=993px) and (width <=1200px) {
+  .accordian {
+    width: 90%;
+    margin: 2.5rem auto; 
+  }
+}
